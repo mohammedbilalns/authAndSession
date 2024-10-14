@@ -1,0 +1,22 @@
+    <%- include("partials/header.ejs") %>
+    <main class="container my-4 flex-grow-1">
+        <h2> Login to Continue</h2>
+        <form method="POST" action="/submit" >
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input name="username" type="text" class="form-control" id="username" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input name="password" type="password" class="form-control" id="password" required>
+            </div>
+            <% if(locals.error){ %>
+                <p class="text-danger"> <%= error %> </p>
+
+            <% } %>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </main>
+
+    <%- include("partials/footer.ejs") %>
+    

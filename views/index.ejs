@@ -1,0 +1,72 @@
+<%- include("partials/header.ejs") %>
+
+<main class="container my-4 flex-grow-1">
+    <h1 class="text-center">Welcome to My Website</h1>
+    <p class="text-center lead"> <%= greetText %></p>
+
+    <!-- About Section -->
+    <section class="my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://placeholder.co/500x300" alt="About Us" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <h2>About Us</h2>
+                <p>
+                    We are committed to providing the best services to our clients. Our team consists of experts in
+                    various fields, ensuring that you receive top-notch service tailored to your needs.
+                </p>
+                <a href="#" class="btn btn-primary mt-2">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="my-5">
+        <h2 class="text-center">Our Services</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <i class="fas fa-code fa-3x mb-3"></i>
+                <h3>Web Development</h3>
+                <p>We create responsive, fast, and SEO-optimized websites tailored to your business needs.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-mobile-alt fa-3x mb-3"></i>
+                <h3>Mobile Development</h3>
+                <p>Our team builds user-friendly mobile apps for iOS and Android platforms.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-cloud fa-3x mb-3"></i>
+                <h3>Cloud Solutions</h3>
+                <p>We offer cloud-based solutions to improve your business' efficiency and scalability.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="my-5">
+        <h2 class="text-center">Contact Us</h2>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<%- include("partials/footer.ejs") %>
+
